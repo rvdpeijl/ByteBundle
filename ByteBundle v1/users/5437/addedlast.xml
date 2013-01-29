@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<bundle>
+  <snippet>
+    <id>20371</id>
+    <snippetname>TestSnippet1</snippetname>
+    <bundlename>TestBundle1</bundlename>
+    <tags>testssss</tags>
+    <comment>jQuery stuff.</comment>
+    <code>$('#quickstart').hover(function() {
+    $('#visiblepanel').toggle();
+});</code>
+    <dateadded>01/29/2013 03:55:15 am</dateadded>
+  </snippet>
+</bundle>

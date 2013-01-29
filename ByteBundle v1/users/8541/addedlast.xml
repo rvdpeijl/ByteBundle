@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<bundle>
+  <snippet>
+    <id>64420</id>
+    <snippetname>Naam_met_een_spatie</snippetname>
+    <bundlename>Naam_met_een_spatie</bundlename>
+    <tags>klaas,henk,frits,piet</tags>
+    <comment>asdf</comment>
+    <code>Naam met spaties	</code>
+    <dateadded>01/29/2013 02:11:34 am</dateadded>
+  </snippet>
+</bundle>

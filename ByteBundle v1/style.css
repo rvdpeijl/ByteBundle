@@ -1,0 +1,700 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Armata);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.5s;
+	-moz-transition: color 0.5s; /* Firefox 4 */
+	-webkit-transition: color 0.5s; /* Safari and Chrome */
+	-o-transition: color 0.5s; /* Opera */
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+input {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+
+	outline: none;
+}
+
+span {
+	display: inline-block;
+}
+
+textarea {
+	outline: none;
+}
+
+.bigBundle {
+	opacity: 0.6;
+	position: relative;
+	float: right;
+	margin: 70px;
+	width: 335px;
+	height: 70px;
+	background-image: url("img/newbundle_big.png");
+}
+
+.bigBundle:hover {
+	opacity: 1;
+}
+
+#bundleOverview {
+	position: relative;
+	float: right;
+	width: 100%;
+	height: auto;
+	background-image: url("img/bundleBackground.png");
+	margin-bottom: 20px;
+}
+
+.listOverview {
+	width: 50%;
+	list-style-type: none;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fafafa;
+}
+
+.listOverview li {
+	padding: 4px;
+}
+
+.listOverview li:hover{
+	background-image: url("img/bundleBackground_horizontal.png");
+	color: #fafafa;
+	text-decoration: inherit;
+	border: 1px solid #b1cdd8;
+	background-position: 0px -5px;
+}
+
+#content {
+
+}
+
+#content-wrapper {
+	position: absolute;
+	left: 200px;
+	right: 200px;
+	top: 100px;
+	bottom: 0px;
+}
+
+#currentBundle {
+	clear: both;
+}
+
+#formWrapper {
+	background-color: #5694ad;
+	border: 1px solid #5694ad;
+
+	position: relative;
+
+	height: 400px;
+	width: 49.5%;
+	float: left;
+	right: 0px;
+
+	display: block;
+}
+
+#heading {
+	width: 100%;
+	height: 50px;
+	background-color: #5694ad;
+	-webkit-box-shadow: 0px 10px 30px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    0px 10px 30px rgba(50, 50, 50, 0.35);
+	box-shadow:         0px 10px 30px rgba(50, 50, 50, 0.35);
+	border-bottom-style: solid;
+	border-bottom-color: #fafafa;
+	border-bottom-width: 1px;
+}
+
+#headingshadow {
+	width: 100%;
+	height: 50px;
+	background-image: url("img/shadow.png"); 
+	background-repeat: repeat-x;
+}
+
+#loginBox {
+	position: absolute;
+	right: 0px;
+	top: 20%;
+	width: 300px;
+	height: 275px;
+	background-color: #5694ad;
+}
+
+#middle {
+	position: absolute;
+	width: 50%;
+	top: 20%;
+	height: 175px;
+}
+
+#myBundle {
+	width: 100%;
+	height: 100%;
+}
+
+#optionsBar {
+	position: absolute;
+	right: 0px;
+	top: 40px;
+
+	width: 250px;
+	height: 20px;
+	background-color: #5694ad;
+
+	-moz-border-radius: 0px 0px 15px 15px;
+	border-radius: 0px 0px 15px 15px;
+}
+
+#optionsWrapper {
+	background-image: url("img/options.png"); 
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	right: 0px;
+	top: 3px;
+	/*background-color: #5694ad;*/
+
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+	cursor: pointer;
+}
+
+#optionsWrapper:hover {
+	background-image: url("img/options_hover.png"); 
+}
+
+#optionsWrapper:active {
+	background-image: url("img/options_active.png"); 
+}
+
+#overview {
+	width: 100%;
+	height: 100%;
+}
+
+#registerDiv {
+	margin: 20px;
+	color: #5694ad;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#social {
+	background-color: transparent;
+
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+
+	width: 140px;
+	height: 75px;
+}
+
+#socialTooltipFB {
+	position: fixed;
+	bottom: 100px;
+	left: 0px;
+
+	background-color: #384f79;
+
+	width: 135px;
+	height: 50px;
+
+	opacity: 0;
+}
+
+#socialTooltipTW {
+	position: fixed;
+	bottom: 100px;
+	left: 0px;
+
+	background-color: #4bc5ec;
+
+	width: 135px;
+	height: 50px;
+
+	opacity: 0;
+}
+
+#txtLogin {
+	width: 85%;
+	position: absolute;
+	top: 15%;
+	padding: 20px 0px 10px 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+}
+
+
+.automarge {
+	margin: auto;
+	padding: 3px;
+}
+
+.baseFont {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+
+.block-left {
+	padding-right: 1px;
+
+	margin: auto;
+	width: 50%;
+
+	float: left;
+}
+
+
+.bundleList {
+	width: 100%;
+
+}
+
+.bundleList li {
+	padding: 2%;
+	background-color: #b1cdd8;
+	list-style-type: none;
+
+	color: #fafafa;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+}
+
+.bundleList li:hover {
+	background-color: #5694ad;
+}
+
+.commentBox {
+	float: left;
+
+	resize: none;
+	margin-top: 5px;
+
+	height: 100px;
+	width: 100%;
+}
+
+.deleteButton {
+	cursor: pointer;
+
+	height: 25px;
+	width: 25px;
+	margin-top: -5px;
+	float: right;
+	background-image: url("img/delete.png"); 
+}
+
+.edit {
+	position: absolute;
+	right: 60px;
+}
+
+.facebook {
+	float: right;
+
+	-webkit-transition: opacity 0.3s; /* Safari and Chrome */
+	opacity: 0.35;
+}
+
+.facebook:hover {
+	opacity: 1;
+}
+
+.filler {
+	width: 100%;
+	height: 15px;
+}
+
+.floatLeft {
+	float: left;
+	clear: both;
+}
+
+.fonted {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: #5694ad;
+}
+
+.fonted_white {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: #fafafa;
+	font-size: 15px;
+}
+
+.forgotPassword {
+	font-size: 11px;
+}
+
+.formTest {
+	padding: 20px;
+}
+
+.formText {
+	color: #fafafa;
+	padding: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: left;
+}
+
+.imgLogo {
+	position: absolute;
+	top: 3px;
+	left: 200px;
+	opacity: 0.75;
+
+	transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s; 
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+}
+
+.imgLogo:hover {
+	opacity: 1;
+}
+
+.inputName {
+	width: 100%;
+	height: 17px;
+	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.inputBundle {
+	border: none;
+	margin-right: -4px;
+	width: 30%;
+	height: 20px;
+	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.inputBundle2 {
+	border: none;
+	float: right;
+	width: 40%;
+	height: 20px;
+	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+
+	margin-top: 1px;
+	margin-right: 0px;
+}
+
+.inputTags {
+	width: 100%;
+	height: 17px;
+	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.learnMore {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	width: 120px;
+	height: 35px;
+
+	background-image: url("img/learnmore.png"); 
+	
+}
+
+.learnMore:hover {
+	background-image: url("img/learnmore_hover.png"); 
+}
+
+.learnMore:active {
+	background-image: url("img/learnmore_active.png"); 
+}
+
+.loggedIn {
+	position: absolute;
+	right: 4%;
+	top: 0px;
+	padding: 4px 10px 3px 0px;
+	text-align: right;
+}
+
+.loggedIn a {
+	color: #b1cdd8;
+}
+
+.loginAndReg {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fafafa;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.loginButton {
+	border: 0;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+
+	width: 120px;
+	height: 35px;
+
+	background-image: url("img/login.png"); 
+}
+
+.loginButton:hover {
+	background-image: url("img/login_hover.png"); 
+}
+
+.loginButton:active {
+	background-image: url("img/login_active.png"); 
+}
+
+.logo {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: white;
+	padding: 10px 0px 0px 75px;
+	opacity: 0.75;
+}
+
+.navLoggedIn {
+	width: 96%;
+	height: 3%;
+	background-color: #5694ad;
+	margin-bottom: 15px;
+
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.navText {
+	color: #fafafa;
+	font-size: 12px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: auto;
+	padding: 10px;
+}
+
+.navText li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 20px;
+}
+
+.newBundle {
+	margin-top: 30px;
+	float: right;
+
+	width: 120px;
+	height: 35px;
+
+	background-image: url("img/newbundle.png"); 
+}
+
+.newBundle:hover {
+	background-image: url("img/newbundle_hover.png"); 
+}
+
+.newBundle:active {
+	background-image: url("img/newbundle_active.png"); 
+}
+
+.registerButton {
+	margin-top: 20px;
+	border: 0;
+	cursor: pointer;
+
+	background-image: url("img/register.png"); 
+	width: 120px;
+	height: 35px;
+}
+
+.registerButton:hover {
+	background-image: url("img/register_hover.png"); 
+}
+
+.registerButton:active {
+	background-image: url("img/register_active.png"); 
+}
+
+.settingsText {
+	color: #fafafa;
+	font-size: 11px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: auto;
+	padding: 3px 0px 0px 30px;
+
+	opacity: 0;
+}
+
+.settingsText li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 20px;
+}
+
+.submitButton {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+
+	cursor: pointer;
+
+	background-image: url("img/submit_default.png"); 
+	width: 120px;
+	height: 35px;
+}
+
+.submitButton:hover {
+	background-image: url("img/submit_hover.png"); 
+}
+
+.submitButton:active {
+	background-image: url("img/submit_active.png"); 
+}
+
+.textSmall {
+	color: #fafafa;
+	font-size: 9px;
+	font-family: 'Armata', sans-serif;
+	padding-top: 11px;
+}
+
+.twitter {
+	float: right;
+	-webkit-transition: opacity 0.3s; /* Safari and Chrome */
+	opacity: 0.35;
+}
+
+.twitter:hover {
+	opacity: 1;
+}
+
+.snipID {
+	display: none;
+}
+
+.snipName {
+	margin: 0 auto;
+	margin-right: 100px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+
+.bundleWrapper {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.bundleWrapper:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.create {
+	border: 0;
+	position: absolute;
+	top: 7.5em;
+	left: 11.5em;
+	cursor: pointer;
+
+	background-image: url("img/create.png"); 
+	width: 120px;
+	height: 35px;
+}
+
+.create:hover {
+	background-image: url("img/create_hover.png"); 
+}
+
+.create:active {
+	background-image: url("img/create_active.png"); 
+}
+
+.viewBundle {
+	padding: 2%;
+	background-color: #b1cdd8;
+	list-style-type: none;
+
+	color: #fafafa;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	border-bottom: 1px solid #5694ad;
+}
+
+.viewBundle:hover {
+	background-color: #5694ad;
+}
+
+
+.showButton {
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+
+	background: url("img/showButton.png");
+	float: right;
+	margin-top: -80px;
+	margin-right: 15px;
+	z-index: 10;
+	opacity: 0.6;
+}
+
+.showButton:hover {
+	opacity: 1;
+}
+
+.deleteButton {
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+
+	background: url("img/deleteButton.png");
+	float: right;
+	margin-top: -80px;
+	margin-right: 120px;
+	z-index: 10;
+	opacity: 0.4;
+}
+
+.deleteButton:hover {
+	opacity: 1;
+}
+
+.white {
+	padding: 20px;
+	color: #fafafa;
+}
+
+.dark {
+	color: #194252;
+}
